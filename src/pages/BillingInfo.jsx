@@ -2,7 +2,7 @@ import React from 'react'
 import Header from '../component/Header'
 import { Link } from 'react-router-dom'
 
-const Billing_info = () => {
+const BillingInfo = () => {
     return (
 
         <section className="m-auto w-[35%]">
@@ -67,7 +67,7 @@ const Billing_info = () => {
                     </div>
                 </div>
                 <div className="flex items-center gap-10">
-                    <div><Link to="/src/pages/Confirm_payment.jsx">
+                    <div><Link to="/src/pages/ConfirmPayment.jsx">
                         <button
                             type="submit"
                             className="btn mt-5"> Next</button>
@@ -87,4 +87,4 @@ const Billing_info = () => {
     )
 }
 
-export default Billing_info
+export default BillingInfo;

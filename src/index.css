@@ -18,6 +18,7 @@ h1 {
   color: #f2994a;
   padding-bottom: 0.2rem;
   border-bottom: 3px solid #f2994a;
+  pointer-events: none;
 }
 .btn {
   background: linear-gradient(180deg, #f2c94c 0%, #f2994a 100%);
@@ -27,6 +28,10 @@ h1 {
   padding: 0.2rem 3rem;
   text-align: center;
 }
+
+/* a {
+  pointer-events: none;
+} */
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",

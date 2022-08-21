@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { AiOutlineCheck } from "react-icons/ai";
 
-const success = () => {
+const Success = () => {
     return (
         <section className="m-auto w-[35%] items-center pt-20">
             <div className=" rounded-md shadow-md bg-white px-8 pt-5 pb-7">
@@ -31,4 +31,4 @@ const success = () => {
     )
 }
 
-export default success
+export default Success

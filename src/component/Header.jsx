@@ -16,18 +16,21 @@ const Header = () => {
                 <ul className="flex justify-between gap-5">
                     <li>
                         <NavLink
+                            style={{ pointerEvents: "none" }}
                             className={({ isActive }) => (isActive ? "link-active" : "")}
                             to="/">Personal Info</NavLink>
                     </li>
                     <li>
                         <NavLink
+                            style={{ pointerEvents: "none" }}
                             className={({ isActive }) => (isActive ? "link-active" : "")}
-                            to="/src/pages/Billing_info.jsx">Billing Info</NavLink>
+                            to="/src/pages/BillingInfo.jsx">Billing Info</NavLink>
                     </li>
                     <li>
                         <NavLink
+                            style={{ pointerEvents: "none" }}
                             className={({ isActive }) => (isActive ? "link-active" : "")}
-                            to="/src/pages/Confirm_payment.jsx">Confirm Payment</NavLink>
+                            to="/src/pages/ConfirmPayment.jsx">Confirm Payment</NavLink>
                     </li>
 
                 </ul>

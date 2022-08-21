@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import Header from '../component/Header'
 
 
-const Personal_info = () => {
+const PersonalInfo = () => {
   return (
     <section className="m-auto w-[35%]">
       <div className="">
@@ -23,7 +23,7 @@ const Personal_info = () => {
               Email Address <span className="text-red-500">*</span>
             </label>
             <p className="text-[#817E9E] text-xs italic my-2">The purchase receipt would be sent to this address.</p>
-            <input className="appearance-none block w-full bg-[#FFFFFF] text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-red-500" id="grid-email" type="email" placeholder="Doe@gmail.com" />
+            <input className="appearance-none block w-full bg-[#FFFFFF] text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-red-500" id="grid-email" type="email" placeholder="Doe@gmail.com" required />
           </div>
         </div>
         <div className="flex flex-wrap -mx-3 mb-6">
@@ -70,7 +70,7 @@ const Personal_info = () => {
 
         </div>
         <div className="flex items-center gap-10">
-          <div><Link to="/src/pages/Billing_info.jsx">
+          <div><Link to="/src/pages/BillingInfo.jsx">
             <button
               type="submit"
               className="btn mt-5"> Next</button>
@@ -90,4 +90,4 @@ const Personal_info = () => {
   )
 }
 
-export default Personal_info
+export default PersonalInfo

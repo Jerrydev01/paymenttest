@@ -2,7 +2,7 @@ import React from 'react'
 import Header from '../component/Header'
 import { Link } from 'react-router-dom'
 
-const Confirm_payment = () => {
+const ConfirmPayment = () => {
     return (
         <section className="m-auto w-[35%]">
             <Header />
@@ -29,7 +29,7 @@ const Confirm_payment = () => {
 
             </div>
             <div className="flex items-center gap-10">
-                <div><Link to="/src/pages/success.jsx">
+                <div><Link to="/src/pages/Success.jsx">
                     <button
                         type="submit"
                         className="btn mt-5"> Pay</button>
@@ -48,4 +48,4 @@ const Confirm_payment = () => {
     )
 }
 
-export default Confirm_payment
+export default ConfirmPayment;
