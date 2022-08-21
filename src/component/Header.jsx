@@ -10,9 +10,9 @@ const Header = () => {
 
         <header className="">
             <div className="pt-16 pb-9">
-                <h1 className=" text-[#4E598C] font-semibold">Complete your Purchase</h1>
+                <h1 className=" text-[#4E598C] font-semibold text-[25px] md:text-[28px] ">Complete your Purchase</h1>
             </div>
-            <div className=" text-[#BDBDBD] text-[18px]">
+            <div className=" text-[#BDBDBD] text-[16px] md:text-[18px] ">
                 <ul className="flex justify-between gap-5">
                     <li>
                         <NavLink

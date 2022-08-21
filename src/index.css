@@ -10,10 +10,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-h1 {
-  font-size: 28px;
-}
-
 .link-active {
   color: #f2994a;
   padding-bottom: 0.2rem;

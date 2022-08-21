@@ -4,13 +4,13 @@ import { AiOutlineCheck } from "react-icons/ai";
 
 const Success = () => {
     return (
-        <section className="m-auto w-[35%] items-center pt-20">
+        <section className="m-auto lg:w-[40%] xl:lg:w-[35%]  md:w-[55%] w-[90%] items-center pt-20">
             <div className=" rounded-md shadow-md bg-white px-8 pt-5 pb-7">
                 <div className="flex m-auto justify-center p-3 text-4xl text-[#6FCF97] rounded-full shadow-md w-fit">
                     <AiOutlineCheck />
                 </div>
                 <div className=" rounded-md text-white py-3 px-7 mt-5">
-                    <h1 className="text-[#4E598C]">Purchase Completed</h1>
+                    <h1 className="text-[#4E598C] text-[23px] md:text-[28px] ">Purchase Completed</h1>
 
                 </div>
                 <div className=" px-7 text-[#4F4F4F]">

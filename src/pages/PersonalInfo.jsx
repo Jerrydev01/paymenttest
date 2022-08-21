@@ -5,7 +5,7 @@ import Header from '../component/Header'
 
 const PersonalInfo = () => {
   return (
-    <section className="m-auto w-[35%]">
+    <section className="m-auto lg:w-[40%] xl:lg:w-[35%]  md:w-[55%] w-[90%]">
       <div className="">
         <Header />
       </div>

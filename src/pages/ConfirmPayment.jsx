@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 
 const ConfirmPayment = () => {
     return (
-        <section className="m-auto w-[35%]">
+        <section className="m-auto lg:w-[40%] xl:lg:w-[35%]  md:w-[55%] w-[90%]">
             <Header />
             <div className="my-10 rounded-md shadow-md bg-white pb-7">
                 <div className="flex items-center justify-between bg-[#2F80ED] rounded-md text-white py-3 px-7">
