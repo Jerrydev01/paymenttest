@@ -70,7 +70,7 @@ const PersonalInfo = () => {
 
         </div>
         <div className="flex items-center gap-10">
-          <div><Link to="/src/pages/BillingInfo.jsx">
+          <div><Link to="/pages/BillingInfo.jsx">
             <button
               type="submit"
               className="btn mt-5"> Next</button>

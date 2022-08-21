@@ -67,7 +67,7 @@ const BillingInfo = () => {
                     </div>
                 </div>
                 <div className="flex items-center gap-10">
-                    <div><Link to="/src/pages/ConfirmPayment.jsx">
+                    <div><Link to="/pages/ConfirmPayment.jsx">
                         <button
                             type="submit"
                             className="btn mt-5"> Next</button>

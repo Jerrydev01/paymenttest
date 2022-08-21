@@ -29,7 +29,7 @@ const ConfirmPayment = () => {
 
             </div>
             <div className="flex items-center gap-10">
-                <div><Link to="/src/pages/Success.jsx">
+                <div><Link to="/pages/Success.jsx">
                     <button
                         type="submit"
                         className="btn mt-5"> Pay</button>
