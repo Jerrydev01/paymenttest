@@ -1,5 +1,3 @@
-import Header from './component/Header';
-
 import {
   BrowserRouter,
   Routes,
