@@ -1,21 +1,37 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import Header from '../component/Header'
 
 
 const PersonalInfo = () => {
+
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [address1, setAddress1] = useState("");
+  const [address2, setAddress2] = useState("");
+  const [localGov, setLocalGov] = useState("");
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+  }
+
   return (
     <section className="m-auto lg:w-[40%] xl:lg:w-[35%]  md:w-[55%] w-[90%]">
       <div className="">
         <Header />
       </div>
-      <form className="w-full max-w-lg my-10 pb-10">
+      <form
+        onSubmit={handleSubmit}
+        className="w-full max-w-lg my-10 pb-10">
         <div className=" flex-wrap -mx-3 mb-6">
           <div className="w-full px-3">
             <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" htmlFor="grid-first-name" >
               Name
             </label>
-            <input className="appearance-none block w-full bg-[#FFFFFF] text-gray-700 border focus:border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="text" placeholder="Opara Linus Ahmed" />
+            <input
+              onChange={(e) => setName(e.target.value)}
+              value={name}
+              className="appearance-none block w-full bg-[#FFFFFF] text-gray-700 border focus:border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="text" placeholder="Opara Linus Ahmed" />
 
           </div>
           <div className="w-full px-3">
@@ -23,7 +39,10 @@ const PersonalInfo = () => {
               Email Address <span className="text-red-500">*</span>
             </label>
             <p className="text-[#817E9E] text-xs italic my-2">The purchase receipt would be sent to this address.</p>
-            <input className="appearance-none block w-full bg-[#FFFFFF] text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-red-500" id="grid-email" type="email" placeholder="Doe@gmail.com" required />
+            <input
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              className="appearance-none block w-full bg-[#FFFFFF] text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-red-500" id="grid-email" type="email" placeholder="Doe@gmail.com" required />
           </div>
         </div>
         <div className="flex flex-wrap -mx-3 mb-6">
@@ -31,7 +50,10 @@ const PersonalInfo = () => {
             <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" htmlFor="grid-address1">
               Address 1
             </label>
-            <input className="appearance-none block w-full bg-[#FFFFFF] text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-red-500" id="grid-address1" type="text" placeholder="The address of the user goes here" />
+            <input
+              value={address1}
+              onChange={(e) => setAddress1(e.target.value)}
+              className="appearance-none block w-full bg-[#FFFFFF] text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-red-500" id="grid-address1" type="text" placeholder="The address of the user goes here" />
 
           </div>
         </div>
@@ -40,7 +62,10 @@ const PersonalInfo = () => {
             <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" htmlFor="grid-address2">
               address 2
             </label>
-            <input className="appearance-none block w-full bg-[#FFFFFF] text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-red-500" id="grid-address2" type="text" placeholder="And here" />
+            <input
+              value={address2}
+              onChange={(e) => setAddress2(e.target.value)}
+              className="appearance-none block w-full bg-[#FFFFFF] text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-red-500" id="grid-address2" type="text" placeholder="And here" />
           </div>
         </div>
         <div className="flex w-full -mx-3 mb-2">
@@ -48,7 +73,10 @@ const PersonalInfo = () => {
             <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" htmlFor="grid-city">
               Local Government
             </label>
-            <input className="appearance-none block w-full bg-[#FFFFFF] text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-red-500" id="grid-Local_Government" type="text" placeholder="Surulere" />
+            <input
+              value={localGov}
+              onChange={(e) => setLocalGov(e.target.value)}
+              className="appearance-none block w-full bg-[#FFFFFF] text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-red-500" id="grid-Local_Government" type="text" placeholder="Surulere" />
           </div>
           <div className="w-1/2 mb-6 md:mb-0">
             <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" htmlFor="grid-state">
