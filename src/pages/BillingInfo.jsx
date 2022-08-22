@@ -68,9 +68,11 @@ const BillingInfo = () => {
                             <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" htmlFor="grid-address2">
                                 Expiry date <span className="text-red-500">*</span>
                             </label>
-                            value={expiryDate}
+                            <input 
+value={expiryDate}
                             onChange={(e) => setExpiryDate(e.target.value)}
-                            <input className="appearance-none block w-full bg-[#FFFFFF] text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-red-500" id="grid-address2" type="text" placeholder="04 / 23" maxLength="5" />
+                            
+className="appearance-none block w-full bg-[#FFFFFF] text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-red-500" id="grid-address2" type="text" placeholder="04 / 23" maxLength="5" />
                         </div>
                     </div>
                     <div className="flex -mx-3 mb-2 w-[25%] md:w-[20%] ">
